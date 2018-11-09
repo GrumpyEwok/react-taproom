@@ -3,7 +3,10 @@ import KegDetail from './KegDetail';
 
 function KegList(){
   return (
-    <div><KegDetail/></div>
+    <div>
+      <h1>Kegs On Tap</h1>
+      <KegDetail/>
+    </div>
   );
 }
 

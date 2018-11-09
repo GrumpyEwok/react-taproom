@@ -8,8 +8,7 @@ import KegList from './KegList';
 function App(){
   return (
     <div>
-      <style global jsx>{' div { border: 1px solid blue;}'}
-      </style>
+      <style global jsx> {' div { border: 1px solid blue;}'} </style>
       <header>
         <div className='container'>
           <h1>Taproom Tracker</h1>
