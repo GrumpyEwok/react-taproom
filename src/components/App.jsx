@@ -6,11 +6,15 @@ import KegList from './KegList';
 
 
 function App(){
+  const container = {
+    display: 'flex',
+    flexDirection: 'column',
+  }
   return (
     <div>
-      <style global jsx> {' div { border: 1px solid blue;}'} </style>
+      <style global jsx> {' header { width: 100%; background-color: royalblue; } div { width: 100%; }'} </style>
       <header>
-        <div className='container'>
+        <div style={container}>
           <h1>Taproom Tracker</h1>
           <Nav/>
         </div>

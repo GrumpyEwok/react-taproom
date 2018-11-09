@@ -5,6 +5,7 @@ function KegDetail(){
     backgroundColor: 'blue',
     width: '100px',
     height: '70px',
+    marginLeft: '10px',
   }
   return (
     <div>
