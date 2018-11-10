@@ -13,6 +13,8 @@
 
 * Had to do a fair bit of image editing to get my splash image to resize in proportion to header/nav.
 
+* Somehow, I wound up in conflict with my Master Branch and had to fix it via pull request. A little alarming - but it worked out in the end.
+
 # Prompt
 
 In your description of the project include thoughts on the difference in development process in Angular and React.
