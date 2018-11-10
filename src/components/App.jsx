@@ -16,6 +16,7 @@ function App(){
     textAlign: 'center',
     fontSize: '18px',
     color: '#415b76',
+    textDecoration: 'underline',
   }
 
   return (
