@@ -2,7 +2,7 @@ import React from 'react';
 
 function KegDetail(){
   const itemStyle = {
-    backgroundColor: 'blue',
+    border: '1px solid blue',
     width: '100px',
     height: '70px',
     marginLeft: '10px',
