@@ -2,8 +2,8 @@ import React from 'react';
 import breweryArt from '../assets/images/brewery-art.png';
 function Splash(){
   const splashStyle = {
-    left: '0',
-    transform: 'translateX(67%)',
+    display: 'block',
+    margin: '0 auto',
     maxWidth: '100%',
     maxHeight: '75vh'
   }

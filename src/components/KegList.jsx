@@ -4,7 +4,7 @@ import KegDetail from './KegDetail';
 function KegList(){
   return (
     <div>
-      <h1>Kegs On Tap</h1>
+      <h5>Kegs On Tap</h5>
       <KegDetail/>
     </div>
   );

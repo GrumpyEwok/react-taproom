@@ -1,25 +1,25 @@
 import React from 'react';
-// Route import needed for link To's?
+import { Link } from 'react-router-dom';
 
 function Nav(){
   return (
     <div >
       <style jsx> {` button {
         width: 12vw;
+        min-width: 58.5px;
         height: 1.5em;
         margin-bottom: 4em;
         border: 0.5px solid grey;
         border-radius: 3px;
         text-align: center;
-        font-size: 16px;
-        font-family: monospace;
+        font-size: 12px;
       } div {
-      display: flex;
-      justify-content: space-around; }
+        display: flex;
+        justify-content: space-around; }
       } `} </style>
-      <button>Home</button>
-      <button>Keg List</button>
-      <button>Inventory</button>
+      <Link to="/"><button>Home</button></Link>
+      <Link to="/keg-list"><button>Keg List</button></Link>
+      <Link to ="/inventory"><button>Inventory</button></Link>
     </div>
   );
 }
