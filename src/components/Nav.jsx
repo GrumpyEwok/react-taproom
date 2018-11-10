@@ -5,14 +5,17 @@ function Nav(){
   return (
     <div >
       <style jsx> {` button {
-        width: 12vw;
+        width: 18vw;
         min-width: 58.5px;
-        height: 1.5em;
-        margin-bottom: 4em;
-        border: 0.5px solid grey;
+        height: 2em;
+        margin-bottom: 1em;
+        background-color: #7b9ba6;
+        border: none;
         border-radius: 3px;
         text-align: center;
         font-size: 12px;
+        color: white;
+        box-shadow: 0px 1px 4px #fafafa;
       } div {
         display: flex;
         justify-content: space-around; }

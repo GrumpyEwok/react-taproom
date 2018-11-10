@@ -3,7 +3,7 @@ import breweryArt from '../assets/images/brewery-art.png';
 function Splash(){
   const splashStyle = {
     display: 'block',
-    margin: '0 auto',
+    margin: '4em auto',
     maxWidth: '100%',
     maxHeight: '75vh'
   }

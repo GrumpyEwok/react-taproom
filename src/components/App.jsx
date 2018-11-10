@@ -15,11 +15,12 @@ function App(){
   const heading = {
     textAlign: 'center',
     fontSize: '18px',
+    color: '#415b76',
   }
 
   return (
     <div>
-      <style global jsx> {' html, body {font-family: Roboto, sans-serif; margin: 0; padding: 0;} header {width: 100%;} div {width: 100%;}'} </style>
+      <style global jsx> {' html, body {font-family: Roboto, sans-serif; margin: 0; padding: 0; background-color: #eef4f2;} header, div {width: 100%;}'} </style>
       <header>
         <div style={container}>
           <h1 style={heading}>Taproom Tracker</h1>
