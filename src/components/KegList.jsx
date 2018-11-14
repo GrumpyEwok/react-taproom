@@ -51,10 +51,19 @@ function KegList(){
       price: '6',
       remaining: '58'
     }
-  ]
+  ];
+
+  const listWrapper = {
+    boxSizing: 'border-box',
+    border: '1px solid blue',
+    width: '80%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+  }
 
   return (
-    <div>
+    <div style={listWrapper}>
     <h5>Kegs On Tap</h5>
     <hr/>
     {masterKegList.map((keg, index) =>

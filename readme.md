@@ -9,7 +9,7 @@
 
 * Installed, and eventually uninstalled, material-ui for React. Bit of a rabbit hole of functionality that I don't need yet.
 
-* Button font defaults to Arial if Robot is not set in a css module or inline style. Maybe not inheriting from HTML?
+* Button font defaults to Arial if Roboto is not set in a css module or inline style. Maybe not inheriting from HTML?
 
 * Had to do a fair bit of image editing to get my splash image to resize in proportion to header/nav.
 
