@@ -10,14 +10,14 @@ function App(){
   const container = {
     display: 'flex',
     flexDirection: 'column',
-  }
+  };
 
   const heading = {
     textAlign: 'center',
     fontSize: '18px',
     color: '#415b76',
     textDecoration: 'underline',
-  }
+  };
 
   return (
     <div>

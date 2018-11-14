@@ -6,7 +6,7 @@ function Splash(){
     margin: '4em auto',
     maxWidth: '100%',
     maxHeight: '75vh'
-  }
+  };
   return (
     <div>
       <div>

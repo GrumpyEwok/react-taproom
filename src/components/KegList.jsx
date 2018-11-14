@@ -9,7 +9,7 @@ function KegList(){
       description: 'Sparkling Wine & Grapefruit',
       abv: '6.8%',
       price: '7',
-      remaining: '20'
+      remaining: '20',
     },
     {
       name: 'Tart N Juicy',
@@ -60,21 +60,21 @@ function KegList(){
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',
-  }
+  };
 
   return (
     <div style={listWrapper}>
-    <h5>Kegs On Tap</h5>
-    <hr/>
-    {masterKegList.map((keg, index) =>
-      <KegDetail name={keg.name}
-      brewer={keg.brewer}
-      description={keg.issue}
-      abv={keg.abv}
-      price={keg.price}
-      remainer={keg.remaining}
-      key={index}/>
-    )}
+      <h5>Kegs On Tap</h5>
+      <hr/>
+      {masterKegList.map((keg, index) =>
+        <KegDetail name={keg.name}
+          brewer={keg.brewer}
+          description={keg.issue}
+          abv={keg.abv}
+          price={keg.price}
+          remainer={keg.remaining}
+          key={index}/>
+      )}
     </div>
   );
 }
