@@ -17,6 +17,8 @@
 
 * Struggled a fair bit with trying to implement stateful components in the morning, had to backtrack after by the afternoon. Was trying to implement my own classes without following my Help Queue model too closely -- and it proved really challenging.
 
+* Big step forward in comprehension on this commit. Making KegList stateful for the time being, to access masterKegList until I can pass it down from App. Or make app stateless, potentially.
+
 # Prompt
 
 In your description of the project include thoughts on the difference in development process in Angular and React.
