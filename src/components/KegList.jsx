@@ -50,31 +50,44 @@ function KegList(){
       abv:  '5.5%',
       price: '6',
       remaining: '58'
+    },
+    {
+      name: '8 Hop',
+      brewer: 'New Belgium',
+      description: 'Pale Ale',
+      abv:  '5.5%',
+      price: '6',
+      remaining: '58'
     }
   ];
+
 
   const listWrapper = {
     boxSizing: 'border-box',
     border: '1px solid blue',
     width: '80%',
+    height: '100%',
     display: 'flex',
-    flexDirection: 'column',
+    flexWrap: 'wrap',
+    flexDirection: 'row',
     justifyContent: 'space-around',
   };
 
   return (
-    <div style={listWrapper}>
+    <div>
       <h5>Kegs On Tap</h5>
       <hr/>
-      {masterKegList.map((keg, index) =>
-        <KegDetail name={keg.name}
-          brewer={keg.brewer}
-          description={keg.issue}
-          abv={keg.abv}
-          price={keg.price}
-          remainer={keg.remaining}
-          key={index}/>
-      )}
+      <div style={listWrapper}>
+        {masterKegList.map((keg, index) =>
+          <KegDetail name={keg.name}
+            brewer={keg.brewer}
+            description={keg.description}
+            abv={keg.abv}
+            price={keg.price}
+            remaining={keg.remaining}
+            key={index}/>
+        )}
+      </div>
     </div>
   );
 }
