@@ -6,35 +6,32 @@ import Splash from './Splash';
 import KegList from './KegList';
 
 
-function App(){
-  const container = {
-    display: 'flex',
-    flexDirection: 'column',
-  };
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      formVisibleOnPage: false
+    };
+  }
 
-  const heading = {
-    textAlign: 'center',
-    fontSize: '18px',
-    color: '#415b76',
-    textDecoration: 'underline',
-  };
 
-  return (
-    <div>
-      <style global jsx> {' html, body {font-family: Roboto, sans-serif; margin: 0; padding: 0; background-color: #eef4f2;} header, div {width: 100%;}'} </style>
-      <header>
-        <div style={container}>
-          <h1 style={heading}>Taproom Tracker</h1>
-          <Nav/>
-        </div>
-      </header>
-      <Switch>
-        <Route exact path='/' component={ Splash } />
-        <Route path='/keg-list' component={ KegList } />
-        <Route component={Error404} />
-      </Switch>
-    </div>
-  );
+  render() {
+    return (
+      <div>
+        <style global jsx> {' html, body {font-family: Roboto, sans-serif; margin: 0; padding: 0; background-color: #eef4f2;} header, div {width: 100%;} .container { display: flex; flex-direction: column; } .container h1 { text-align: center; font-size: 18px; color: #415b76; text-decoration: underline;}'} </style>
+        <header>
+          <div className='container'>
+            <h1>Taproom Tracker</h1>
+            <Nav/>
+          </div>
+        </header>
+        <Switch>
+          <Route exact path='/' component={ Splash } />
+          <Route path='/keg-list' component={ KegList } />
+          <Route component={Error404} />
+        </Switch>
+      </div>
+    );
+  }
 }
-
 export default App;
