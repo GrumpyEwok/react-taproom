@@ -15,6 +15,8 @@
 
 * Somehow, I wound up in conflict with my Master Branch and had to fix it via pull request. A little alarming - but it worked out in the end.
 
+* Struggled a fair bit with trying to implement stateful components in the morning, had to backtrack after by the afternoon.
+
 # Prompt
 
 In your description of the project include thoughts on the difference in development process in Angular and React.

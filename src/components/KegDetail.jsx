@@ -10,7 +10,6 @@ function KegDetail(props){
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'space-around',
-
   };
 
   return (
