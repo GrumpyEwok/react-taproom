@@ -21,8 +21,8 @@ function Nav(){
         justify-content: space-around; }
       } `} </style>
       <Link to="/"><button>Home</button></Link>
-      <Link to="/keg-list"><button>Keg List</button></Link>
-      <Link to ="/inventory"><button>Inventory</button></Link>
+      <Link to="/inventory"><button>Inventory</button></Link>
+      <Link to ="/new-keg"><button>Add A New Keg</button></Link>
     </div>
   );
 }

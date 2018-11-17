@@ -27,7 +27,7 @@ class App extends React.Component {
         </header>
         <Switch>
           <Route exact path='/' component={ Splash } />
-          <Route path='/keg-list' component={ KegList } />
+          <Route path='/inventory' component={ KegList } />
           <Route path='/new-keg' component={ NewKegControl } />
           <Route component={Error404} />
         </Switch>

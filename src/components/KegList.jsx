@@ -1,7 +1,7 @@
 import React from 'react';
 import KegDetail from './KegDetail';
-class KegList extends React.Component{
 
+class KegList extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
