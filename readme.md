@@ -19,6 +19,8 @@
 
 * Big step forward in comprehension on this commit. Making KegList stateful for the time being, to access masterKegList until I can pass it down from App. Or make app stateless, potentially.
 
+* Ran into issues displaying NewKegForm on button click.  It seems like the HandleClick method of NewKegControl isn't firing.
+
 # Prompt
 
 In your description of the project include thoughts on the difference in development process in Angular and React.

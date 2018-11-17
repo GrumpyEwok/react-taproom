@@ -4,7 +4,7 @@ import Nav from './Nav';
 import Error404 from './Error404';
 import Splash from './Splash';
 import KegList from './KegList';
-import NewKegControl from './NewKegControl'
+import NewKegControl from './NewKegControl';
 
 class App extends React.Component {
   constructor(props) {
