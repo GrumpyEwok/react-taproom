@@ -1,6 +1,5 @@
 import React from 'react';
 import KegDetail from './KegDetail';
-
 class KegList extends React.Component{
 
   constructor(props) {
@@ -66,8 +65,6 @@ class KegList extends React.Component{
       ]
     };
   }
-
-
 
   render() {
     const listWrapper = {
