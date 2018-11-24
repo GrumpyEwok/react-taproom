@@ -14,21 +14,26 @@ function NewKegForm(){
 
   return (
     <div>
+      // <style jsx>{`
+      // 
+      //   Add styles here!
+      //
+      //   `}</style>
       <form onSubmit={handleNewKegFormSubmission}>
         <input
           type='text'
           id='names'
-          placeholder='Pair Names'
+          placeholder='Name'
           ref={(input) => {_names = input;}}/>
         <input
           type='text'
           id='location'
-          placeholder='Location'
+          placeholder='Brewery'
           ref={(input) => {_location = input;}}/>
         <textarea
           id='issue'
-          placeholder='Describe your issue.'
-          ref={(textarea) => {_issue = textarea;}}/>
+          placeholder='Abv'
+          ref={(textarea) => {_issue = input;}}/>
         <button type='submit'>Help!</button>
       </form>
     </div>

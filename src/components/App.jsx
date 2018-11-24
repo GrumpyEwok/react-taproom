@@ -10,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterKegList: []
+      // This component may be unnecessarily stateful;--- I need to set it up according to the curriculum to properly understand which components I'll need in my end result, and then refactor my approach. //
     };
   }
 
