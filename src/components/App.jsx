@@ -4,7 +4,7 @@ import Nav from './Nav';
 import Error404 from './Error404';
 import Splash from './Splash';
 import KegList from './KegList';
-import NewKegControl from './NewKegControl';
+import NewKegForm from './NewKegForm';
 
 class App extends React.Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={ Splash } />
           <Route path='/inventory' component={ KegList } />
-          <Route path='/new-keg' component={ NewKegControl } />
+          <Route path='/new-keg' component={ NewKegForm } />
           <Route component={Error404} />
         </Switch>
       </div>
