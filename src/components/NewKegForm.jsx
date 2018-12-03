@@ -1,6 +1,7 @@
 import React from 'react';
 
 function NewKegForm(){
+  let input;
   let _names = null;
   let _location = null;
   let _issue = null;
@@ -14,11 +15,13 @@ function NewKegForm(){
 
   return (
     <div>
-      // <style jsx>{`
-      // 
-      //   Add styles here!
-      //
-      //   `}</style>
+      <style jsx>{`
+        h1 {
+          color: red;
+        }
+
+
+        `}</style>
       <form onSubmit={handleNewKegFormSubmission}>
         <input
           type='text'

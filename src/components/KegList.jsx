@@ -1,5 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import KegDetail from './KegDetail';
+
 
 class KegList extends React.Component{
   constructor(props) {
@@ -48,5 +50,9 @@ class KegList extends React.Component{
     );
   }
 }
+
+KegList.propTypes = {
+  localKegList: PropTypes.array,
+};
 
 export default KegList;
