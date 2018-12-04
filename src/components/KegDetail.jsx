@@ -15,7 +15,7 @@ function KegDetail(props){
   return (
     <div style={itemWrapper}>
       <p>Name: {props.name}</p>
-      <p>Brewer: {props.brewer}</p>
+      <p>Brewery: {props.brewer}</p>
       <p>Description: {props.description}</p>
       <p>Abv: {props.abv}</p>
       <p>Price: {props.price}</p>

@@ -23,7 +23,7 @@ function KegList(props) {
       <div style={listWrapper}>
         {props.kegList.map((keg, index) =>
           <KegDetail name={keg.name}
-            brewer={keg.brewer}
+            brewery={keg.brewery}
             abv={keg.abv}
             price={keg.price}
             remaining={keg.remaining}

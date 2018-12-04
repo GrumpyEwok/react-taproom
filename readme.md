@@ -21,7 +21,11 @@
 
 * Ran into issues displaying NewKegForm on button click.  It seems like the HandleClick method of NewKegControl isn't firing.
 
+<!-- Below, should be addressed. -->
+
 * Should refactor KegList to be stateless, now that KegControl has been removed and KegList is being passed from App.
+
+* Current setup allows for the creation of 'empty/null' kegs.  Should be able to fix with   isRequired  .
 
 # Prompt
 
