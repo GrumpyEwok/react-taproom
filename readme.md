@@ -21,6 +21,8 @@
 
 * Ran into issues displaying NewKegForm on button click.  It seems like the HandleClick method of NewKegControl isn't firing.
 
+* Should refactor KegList to be stateless, now that KegControl has been removed and KegList is being passed from App.
+
 # Prompt
 
 In your description of the project include thoughts on the difference in development process in Angular and React.

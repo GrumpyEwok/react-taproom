@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function NewKegForm(){
+function NewKegForm(props){
   let input;
   let _name = null;
   let _brewery = null;
@@ -12,13 +13,14 @@ function NewKegForm(){
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
+    props.onNewKegCreation({name: _name.value, brewery: _brewery.value, abv: _abv.value, price: _price.value, remaining: _remaining.value, description: _description.value});
     _name.value = '';
     _brewery.value = '';
     _abv.value = '';
     _price.value = '';
     _remaining.value = '';
     _description.value = '';
-
+    console.log('NewKegCreation fired!');
   }
 
   return (
@@ -76,11 +78,15 @@ function NewKegForm(){
         <textarea
           id='description'
           placeholder='Description'
-          ref={(textarea) => {_description = input;}}/>
+          ref={(textarea) => {_description = textarea;}}/>
         <button type='submit'>Confirm</button>
       </form>
     </div>
   );
 }
+
+NewKegForm.propTypes= {
+  onNewKegCreation: PropTypes.func
+};
 
 export default NewKegForm;

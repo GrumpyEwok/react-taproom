@@ -10,10 +10,16 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // This component may be unnecessarily stateful;--- I need to set it up according to the curriculum to properly understand which components I'll need in my end result, and then refactor my approach. //
+      masterKegList: []
     };
+    this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
   }
 
+  handleAddingNewKegToList(newKeg){
+    let newMasterKegList = this.state.masterKegList.slice();
+    newMasterKegList.push(newKeg);
+    this.setState({masterKegList: newMasterKegList});
+  }
 
   render() {
     return (
@@ -28,11 +34,12 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={ Splash } />
           <Route path='/inventory' component={ KegList } />
-          <Route path='/new-keg' component={ NewKegForm } />
+          <Route path='/new-keg' render={()=><NewKegForm onNewKegCreation={this.handleAddingNewKegToList} />} />
           <Route component={Error404} />
         </Switch>
       </div>
     );
   }
 }
+
 export default App;
