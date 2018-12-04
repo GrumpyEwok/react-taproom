@@ -2,8 +2,20 @@
 
 ![Planned Component Structure](src/assets/images/Component-Structure.png)
 
+### Setup
 
-# Notes
+
+Clone this repository:
+
+`git clone https://github.com/GrumpyEwok/sheet-scroller`
+
+Install the app's dependencies:
+`npm i`
+
+Host, and open localhost:8080 :
+`npm run start-open`
+
+### Notes
 
 * Had to install File Loader dependency to keep linter/webpack from erroring out on build. Ultimately had to upgrade my file-loader from what was pinned -- which probably means I have another version number somewhere that doesn't match the curriculum.
 
@@ -23,11 +35,9 @@
 
 <!-- Below, should be addressed. -->
 
-* Should refactor KegList to be stateless, now that KegControl has been removed and KegList is being passed from App.
-
 * Current setup allows for the creation of 'empty/null' kegs.  Should be able to fix with   isRequired  .
 
-# Prompt
+### Prompt
 
 In your description of the project include thoughts on the difference in development process in Angular and React.
 
