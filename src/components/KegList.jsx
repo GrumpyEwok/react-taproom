@@ -7,7 +7,6 @@ function KegList(props) {
 
   const listWrapper = {
     boxSizing: 'border-box',
-    border: '1px solid blue',
     width: '80%',
     height: '100%',
     display: 'flex',
@@ -16,13 +15,17 @@ function KegList(props) {
     justifyContent: 'space-around',
   };
 
+  const item = {
+    border: '1px solid blue',
+  };
+
   return (
     <div>
       <h5>Kegs On Tap</h5>
       <hr/>
       <div style={listWrapper}>
         {props.kegList.map((keg, index) =>
-          <KegDetail name={keg.name}
+          <KegDetail style={item} name={keg.name}
             brewery={keg.brewery}
             abv={keg.abv}
             price={keg.price}
