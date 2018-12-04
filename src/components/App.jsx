@@ -18,7 +18,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <style global jsx> {' html, body {font-family: Roboto, sans-serif; margin: 0; padding: 0; background-color: #eef4f2;} header, div {width: 100%; margin: auto; } .container { display: flex; flex-direction: column; } .container h1 { text-align: center; font-size: 18px; color: #415b76; text-decoration: underline;}'} </style>
+        <style global jsx> {' html, body {font-family: Roboto, sans-serif; margin: 0; padding: 0; min-width: 522px; background-color: #eef4f2;} header, div {width: 100%; margin: auto; } .container { display: flex; flex-direction: column; } .container h1 { text-align: center; font-size: 18px; color: #415b76; text-decoration: underline;}'} </style>
         <header>
           <div className='container'>
             <h1>Taproom Tracker</h1>
